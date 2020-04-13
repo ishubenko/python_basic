@@ -1,4 +1,4 @@
-test_list = [78,'simple string',48,'word',36.6,False,None]
+test_list = [78,'simple string',48,'word',36.6,False,None,[1,False,3]]
 
 for itm in test_list:
     print(itm,type(itm))
