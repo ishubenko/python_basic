@@ -12,16 +12,16 @@
 from time import sleep
 
 class TrafficLight:
-    color = 'red'
+    __color = 'red'
 
     def running(self):
-        print(TrafficLight.color)
+        print(TrafficLight.__color)
         sleep(7)
-        TrafficLight.color = 'yellow'
-        print(TrafficLight.color)
+        TrafficLight.__color = 'yellow'
+        print(TrafficLight.__color)
         sleep(2)
-        TrafficLight.color = 'green'
-        print(TrafficLight.color)
+        TrafficLight.__color = 'green'
+        print(TrafficLight.__color)
 
 a = TrafficLight()
 a.running()
