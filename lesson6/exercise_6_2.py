@@ -9,12 +9,15 @@
 class Road:
     _length = 0
     _width = 0
+    __var_mass = 25
 
-    def calc(self):
-        self._length
+    def calc(self, length, width, thickness):
+        mass = (length * width * Road.__var_mass * thickness)/1000
+        print(int(mass), ' тонн')
 
 
-a = Road
+a = Road()
+a.calc(20,5000,5)
 
 
 
