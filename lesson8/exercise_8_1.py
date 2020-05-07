@@ -7,3 +7,31 @@
 '''
 class Date:
     def __init__(self, date_str):
+        self.date_str = date_str
+
+    @classmethod
+    def abracadabra(cls, param):
+        var_date_list = param.split('-')
+        #print(var_hour)
+        var_day = int(var_date_list[0])
+        var_month = int(var_date_list[1])
+        var_year = int(var_date_list[2])
+        print(var_day, var_month, var_year)
+        return var_day, var_month, var_year
+
+    @staticmethod
+    def valid (func):
+        var_c = func
+        if var_c[0] > 31 or var_c[0] < 1:
+            print('error1')
+        elif var_c[1] > 12 or var_c[1] < 1:
+            print('error2')
+        elif var_c[2] > 2022 or var_c[2] < 1970:
+            print('error3')
+
+
+var_a = Date('07-05-9920')
+var_b = var_a.abracadabra('47-05-2020')
+var_a.valid(var_b)
+
+
